@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+/* 전체 공통 */
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, 
+input, fieldset, legend, p, select, table, th, td, tr, 
+textarea, button, form {
+    margin: 0; padding: 0;
+}
+
+body {
+    font-family: "맑은 고딕", 돋음, 굴림;
+}
+
+a:link {text-decoration: none; color: #000000;}
+a:visited {text-decoration: none; color: #000000;}
+a:active {text-decoration: none; color: #000000;}
+a:hover {text-decoration: none; color: #000000;}
+
+
+ul, ol {list-style-type: none;}
+
+
+/* clearfix */
+.clearfix{*zoom:1;}
+.clearfix:before {
+display: block; content: ""; line-height: 0;}
+
+.clearfix:after {
+    display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+
+/*layout*/
+#nemo{
+    width:1000px;
+    margin:0px auto;
+}
+
+#nemo #header{
+    border-bottom: 1px solid black;
+}
+
+#nemo #nav{
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+#nemo #contents{
+    background-color: rgb(224, 224, 224);
+    border-bottom: 1px solid rgb(157, 157, 157);
+}
+
+
+#nemo #footer{
+    background-color: #dddddd;
+    padding: 20px 10px 20px 10px;
+    text-align: center;
+}
+
+/* header */
+#header>h1{
+    float:left;
+    margin-top:10px;
+    padding-bottom: 10px;
+}
+
+#header>h1>a{
+    color:coral;
+}
+
+#header>ul{
+    float:right;
+    margin:30px 0px 0px 0px;
+}
+
+#header>ul>li{
+    float:left;
+    margin:0px 0px 0px 20px;
+}
+
+/* nav */
+#nav>ul{
+    padding:10px 0px 10px 0px;
+}
+
+#nav>ul>li{
+    float:left;
+    width:250px;
+    text-align:center;
+    font-size:20px;
+}
+
+/* aside */
+#nemo #contents #aside {
+    float:left;
+    width:180px;
+    margin-right: 20px;
+}
+
+/* main */
+#nemo #contents{
+padding:0px 0px 10px 0px;
+}
+
+#nemo #contetns #aside{
+    float:left;
+    width:180px;
+    margin-right:  20px;
+}
+
+
+#nemo #contents #main {
+    float:left;
+    width:798px;
+}
+
+#nemo #contents #aside h2{
+    background-color:lightgray;
+    font-size: 20px;
+    font-weight:bold;
+    text-align:center;
+    padding:20px 15px 20px 15px;
+}
+
+#nemo #contents #aside ul>li{
+    font-size: 15px;
+    border: 1px solid #a6a6a6;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 0px 0px 0px;
+}
+
+/* main-header */
+#main #main-header{
+    margin: 20px 0px 10px 0px;
+    border-bottom:1px solid gray;
+    padding:0px 0px 10px 0px;
+}
+
+#main #main-header h3{
+    float:left;
+}
+
+#main #main-header ul{
+    float:right;
+    margin-right:10px;
+}
+
+#main #main-header ul>li{
+    float:right;
+    
+}
+
+#main #main-header ul>li:before{
+    float:left;
+    content:">";
+    padding:0px 10px 0px 5px;
+}
+
+
+#main #main-header ul>li.last:before{
+    float:left;
+    content:"";
+}
+
+#main #form{
+    width:400px;
+}

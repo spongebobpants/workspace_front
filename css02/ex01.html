@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ex01</title>
+        <meta charset="UTF-8">
+        <style>
+            *{
+                margin:0px;
+                padding:0px;
+            }
+            .box-red{
+                background-color: #ff0000; 
+                width:500px; 
+                height:60px;}
+            .box-blue{
+                background:#0000ff;
+                width:150px; height:150px;}
+            .span-red{
+                display:inline-block;
+                /*inline block span은 inline인데 여기에 인라인 블록 코드가 들어가니까 블록으로 적용이 되는 것.
+                */
+                background-color: #ff0000; 
+                width:500px; 
+                height:60px;}
+            .span-blue{
+                
+                background-color: #0000ff; 
+                width:150px; 
+                height:150px;}
+ 
+            
+        </style>
+    </head>  
+
+    <body>
+        <div class="box-red">꼬부랑 할머니가 꼬부랑 고갯길을 꼬부랑 꼬부랑</div>
+        <div class="box-blue">꼬부랑 걸어간다 꼬부랑 할머니가 꼬부랑 고갯길을</div>
+        <p class="box-blue">퐁당퐁당 돌을 던지자 누나 몰래 돈을 던지자</p>
+        <!--p는 다음 단계 div은 블록이라 한 단을 다 차지함-->
+        <img class="span-blue" src="./img/jung.jpg">
+        <span class="span-red">강아지</span>
+        <span class="span-blue">고양이</span>
+        
+        <input class="span-blue" type="text" name="uid" value="">
+        <a class="span-red" href="https://www.naver.com/">네이버</a><!--원래는 inline이라 --같은 줄에 있어야 하는데 inline block으로 다음으로 넘어감>
+    </body>
+
+</html>

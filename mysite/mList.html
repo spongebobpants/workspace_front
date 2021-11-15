@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>mList-homework</title>
+        <link rel ="stylesheet" href="./assets/css/mList.css">
+        <link rel ="stylesheet" href="./assets/css/board.css">
+        <style></style>
+    </head>
+    <body>
+        <div id="nemo">
+            <div id="header" class="clearfix">
+                <h1><a href="mList.html">MySite</a></h1>
+                <ul class="clearfix">
+                    <li><a href="">로그인</a></li>
+                    <li><a href="">회원가입</a></li>
+                </ul>
+            </div>
+
+            <div id="nav">
+                <ul class="clearfix">
+                    <li>입사지원서</li>
+                    <li>게시판</li>
+                    <li>갤러리</li>
+                    <li>방명록</li>
+                </ul>
+            </div>
+
+            <div id="contents"  class="clearfix">
+                <div id="aside">
+                    <h2>게시판</h2>
+                    <ul>
+                        <li><a href="">일반 게시판</a></li>
+                        <li><a href="">댓글 게시판</a></li>
+                        <li><a href="">첨부 게시판</a></li>
+                    </ul>
+                </div>
+                <!-- main -->
+                <div id="main">
+                    <div id="main-header" class="clearfix">
+                        <h3>general</h3>
+
+                        <ul class="clearfix">
+                            <li>home</li>
+                            <li>description</li>
+                            <li class="last">general</li>
+                        </ul>
+                    </div>
+
+                    <div id="bWrite">
+                        <form action="" method="post">
+
+                            <div class="form-group">
+                                <label class="form-text" for="boardType">게시판 선택</label>
+                                <select id="boardType" name="">
+                                    <option value="" selected="selected">게시판을 선택하세요</option>
+                                    <option value="">공지사항</option>
+                                    <option value="">일반게시판</option>
+                                    <option value="">익명게시판</option>
+                                </select>
+                            </div> 
+
+                            <div class="form-group">
+                                <label class="form-text" for="title">제목</label>
+                                <input id="title" type="text" name="" value="">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-text" for="password">비밀번호</label>
+                                <input id="password" type="password" name="" value="">
+                            </div>
+
+                            <div class="form-group">
+                                <span class="form-text">공개범위</span>
+                                
+                                <label for="rdo-me">본인</label>
+                                <input type="radio" id="rdo-me" name="scope" value="">
+
+                                <label for="rdo-login">로그인회원</label>
+                                <input type="radio" id="rdo-login" name="scope" value="">
+
+                                <label for="rdo-friend">친구</label>
+                                <input type="radio" id="rdo-friend" name="scope" value="">
+
+                                <label for="rdo-all">전체</label>
+                                <input type="radio" id="rdo-all" name="scope" value="">
+                            </div>
+                            <!-- /공개범위 -->
+
+                            <!-- 허용범위 -->
+                            <div class="form-group">
+                                <span class="form-text">허용범위</span>
+
+                                <label for="chk-reply">댓글허용</label>
+                                <input id="chk-reply" type="checkbox" name="" value="">
+
+                                <label for="chk-answer">답글허용</label>
+                                <input id="chk-answer" type="checkbox" name="" value="">
+                                
+                                <label for="chk-like" >좋아요허용</label>
+                                <input id="chk-like" type="checkbox" name="" value="">
+                            </div> 
+                            <!-- /허용범위 -->
+
+                            <!-- 내용 -->
+                            <div class="form-group">
+                                <textarea id="text-content"></textarea>
+                            </div>
+                            <!-- /내용 -->
+
+                            <!-- 첨부파일-->
+                            <div class="form-group">
+                                <label class="form-text">첨부파일</label>
+                                <input type="file" name="" value="">
+                            </div>
+                            <!-- /첨부파일-->
+
+                            <div class="btn-area" >
+                                <button class="btn btn-gray" type="submit">등록</button>
+                                <button class="btn btn-red" type="reset">삭제</button>
+                                <button class="btn btn-blue" type="reset">수정</button>
+                                <!-- <a class="btn" href="">회원가입</a> -->
+                            </div>
+
+                        </form>
+                    </iv>
+
+                </div>
+                <div id="footer">
+                    Copyright (c) 2021 nemo kim. All right reserved
+                </div>  
+            </div>  <!--contents div-->  
+            
+
+
+        </div>    <!--nemo div-->
+
+    </body>
+
+
+
+
+
+
+</html>

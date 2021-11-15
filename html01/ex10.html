@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>html5</title>
+    </head>
+    <body>
+        <form action="" method="get">
+            <label for="userid">how to login?</label><br>
+
+            <!--데이터 보낼 주소를 입력--get속성은 주소창에 보이고 post는 안 보이는 상태로 전송>
+            name <input type= "text" name= "uname"><br> 속성값은 순서 상관 없음-->
+            <label for="userid">id</label><!--lable은 아래 같은 속성과 연결-->
+            <input id="userid" type="text" name="uid" value="default" placeholder="insert number and text only"><br>
+
+            <label for="userpw">pw</label>
+            <input id="userpw" type="password" name="upw" placeholder="insert password"><br>
+
+            <label for="gender">gender</label>
+            <input id="gender" type="text" name="gd" value="female only" placeholder="any trans"><br><br>
+
+
+            <input type="file" name="file" value="filename">
+            <br><br>
+            <!--checkbox는 다 같은 name 왜냐면 한 그룹이니까-->
+            
+            <label for="chk_read">read</label>
+            <input type="checkbox" id="chk_read" name="hobby" value="book" checked="checked"><br>
+
+            <label for="chk_music">music</label>
+            <input type="checkbox" id="chk_music" name="hobby" value="music"><br>
+
+            <label for="chk_travel">travel</label>
+            <input type="checkbox" id="chk_travel" name="hobby" value="travel"><br><br>
+
+            <label for="chk_bird">bird</label>
+            <input type="checkbox" id="chk_bird" name="pet" value="bird" checked="checked"><br>
+
+            <label for="chk_cat">cat</label>
+            <input type="checkbox" id="chk_cat" bame="pet" value="cat"><br>
+
+            <label for="chk_dog">dog</label>
+            <input type="checkbox" id="chk_dog" name="pet" value="dog"><br><br>
+
+                <!--label-->
+            <label for="rdo_apple">apple</label>
+            <input type="radio" id="rdo_apple" name="fruit" value="apple" checked="checked"><br><!--name이 같아야 한 그룹-->
+
+            <label for="rdo_grape">grape</label>
+            <input type="radio" id="rdo_grape" name="fruit" value="grape"><br>
+
+            <label for="rdo_pear">pear</label>
+            <input type="radio" id="rdo_pear" name="fruit" value="pear"><br>
+
+            <!--label_month-->
+            <p><h4>month</h4></p>
+            <label for="month_1">january</label>
+            <input type="radio" id="month_1" name="month" value="jan"><br>
+
+            <label for="month_2">feburary</label>
+            <input type="radio" id="month_2" name="month" value="feb"><br>
+
+            <label for="month_3">march</label>
+            <input type="radio" id="month_3" name="month" value="march"><br><br>
+
+            <!--select 기능이 같은 것은 radio 단일선택-->
+            <select name="telecom"> <!--아래 옵션의 그룹 네이밍-->
+                <option value="etc" selected="selected">telecom</option>
+                <option value="skt"> SKT</option>
+                <option value="lg">LG U+</option>
+                <option value="kt">KT OLLEH</option>
+                <option value="etc">Another</option>
+
+            </select><br>
+            <textarea name="contents" placeholder="write anything!"> i can do it </textarea>
+            <br><br>
+
+            <!--submit-->
+
+            <button type="submit"> <img src="./img/dotdot.jpg" width=40px> save</button>
+            <button type="reset">reset</button>
+
+            
+
+
+
+        </form> 
+
+
+
+        <!-- <input type="text"><br>
+        <input type="password"><br>
+        <input type="file"><br>
+        <input type="radio"><br>
+        <input type="checkbox"><br>
+        <input type="hidden"><br>
+        <input type="month"><br>
+        <input type="color"><br>
+        <input type="number"><br> -->
+        <!--<input type="button" value="save">not recommend>-->
+
+
+
+
+    </body>
+
+
+
+
+
+
+</html>

@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, 
+input, fieldset, legend, p, select, table, th, td, tr, 
+textarea, button, form {
+    margin: 0; padding: 0;
+}
+
+.clearfix{*zoom:1;}
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+a:link{text-decoration:none; color:black;}
+a:visited{text-decoration:none; color:black;}
+.coral a:hover{text-decoration:none; color:rgb(130, 130, 130);}
+.coral a:active{text-decoration:none; color:rgb(130, 130, 130);}
+
+/* font-family */
+.f-xl {font-size: 20px;}
+.f-l {font-size:16px;}
+.f-s {font-size:10px;}
+.b {font-weight: bold;}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+ul,ol{list-style-type:none;}
+
+/* layout */
+#nemo{
+    width:1000px;
+    margin:0px auto;
+}
+#nemo #header{
+    border-bottom: 1px solid black;
+}
+
+#nemo #nav{
+    border-bottom:1px solid black;
+}
+#nemo #contents{
+    margin:10px 0px 10px 0px;
+
+}
+#nemo #footer{
+    margin:10px 0px;
+}
+
+
+
+
+
+/* header */
+#header>h1{
+    float:left;
+    margin:20px 0px 20px 0px;
+}
+#header>ul{
+    float:right;
+}
+#header>ul>li{
+    float:right;
+    margin:32px 0px 20px 0px;
+    padding-right:20px;
+}
+
+/* navigation */
+#nav>ul{
+    margin:10px;
+}
+#nav>ul>li{
+    width:240px;
+    float:left;
+    font-weight:bold;
+    text-align:center;
+    margin:10px 0px 20px 0px;
+}
+
+/* contents */
+#nemo #contents>img{
+    float:left;
+}
+#nemo #contents #welcome{
+    padding:10px 0px 10px 20px;
+    float:left;
+}
+
+/* footer */
+#nemo #footer{
+    background-color:rgb(220, 220, 220);
+    padding:20px 0px 20px 0px;
+    text-align:center;
+}
+

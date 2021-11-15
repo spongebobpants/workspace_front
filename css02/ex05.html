@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <style>
+
+            .box {
+                width: 200px;
+                height: 100px;
+                border: 4px solid #000000; 
+            }
+
+            .div-round-all {
+                border-radius: 20px;
+            }
+
+            .div-round-each {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 30px;
+                border-bottom-left-radius: 40px;
+            }
+
+
+            /*
+            .div-round-all {
+                width: 200px;
+                height: 100px;
+                border: 4px solid #000000;
+
+                border-radius: 20px;
+            }
+
+            .div-round-each {
+                width: 200px;
+                height: 100px;
+                border: 4px solid #000000;
+
+                border-top-left-radius: 10px;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 30px;
+                border-bottom-left-radius: 40px;
+            }
+            */
+
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <!--         
+        <div class="div-round-all">
+            라운드 한번 적용
+        </div>
+
+        <br>
+
+        <div class="div-round-each">
+            라운드 각각 적용
+        </div> 
+        -->
+
+        <div class="box div-round-all">
+            라운드 한번 적용
+        </div>
+        
+        <br>
+        
+        <div class="box div-round-each">
+            라운드 한번 적용
+        </div>
+
+    </body>
+
+</html>

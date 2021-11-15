@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* 공통 */
+.btn {
+    width: 65px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn-gray {
+    background-color: black;
+    color:whitesmoke;
+}
+
+.btn-gray:hover {
+    background-color: #5d5d5d;
+    color:whitesmoke;
+}
+
+.btn-red {
+    background-color: #636363;
+    color:whitesmoke;
+}
+
+.btn-red:hover {
+    background-color: #818181;
+}
+
+.btn-blue {
+    border: 1px solid #e1e1e1;
+    background-color: #ffffff;
+    color:black;
+}
+
+.btn-blue:hover {
+    background-color: #b4b4b4;
+}
+
+/* 게시판리스트 */
+
+
+
+/* 게시판글쓰기 */
+#bWrite .form-group {
+    /* border-bottom: 1px solid #000000; */
+    padding: 5px 0px 5px 0px;
+}
+
+
+#bWrite #select-boardType {
+    width: 204px;
+    height: 25px;
+}
+
+#bWrite #txt-title {
+    width: 700px;
+    height: 20px;
+    
+}
+
+#bWrite #txt-password {
+    width: 200px;
+    height: 20px;
+}
+
+#bWrite .form-text {
+    display: inline-block;
+    width: 80px;
+}
+
+#bWrite input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    margin: 0px 15px 0px 0px;
+}
+
+#bWrite input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin: 0px 15px 0px 0px;
+}
+
+#bWrite #text-content {
+    width: 786px;
+    height: 300px;
+}
+
+#bWrite .btn-area {
+    border-top: 1px solid #000000;
+    padding: 12px 5px 12px 5px;
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+}
+
+
+
+
+/* 게시판보기 */
+
+
+/* 게시판수정 */
+

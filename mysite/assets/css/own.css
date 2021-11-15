@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+/* 전체 공통 */
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, 
+input, fieldset, legend, p, select, table, th, td, tr, 
+textarea, button, form {
+    margin: 0; padding: 0;
+}
+
+body {
+    font-family: "맑은 고딕", 돋음, 굴림;
+    font-size: 12px;
+}
+
+a:link {text-decoration: none; color: #000000;}
+a:visited {text-decoration: none; color: #000000;}
+a:active {text-decoration: none; color: #000000;}
+a:hover {text-decoration: none; color: #000000;}
+
+
+ul, ol {list-style-type: none;}
+
+
+
+
+/* clearfix */
+.clearfix{*zoom:1;}
+.clearfix:before {
+display: block; content: ""; line-height: 0;}
+
+.clearfix:after {
+    display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+/* layout */
+#wrap{
+    width:1000px;
+    margin:0px auto;
+}
+
+#wrap #header{
+    margin:10px 0px 10px 0px;
+}
+
+#wrap #nav{
+    border:1px solid black;
+}
+
+#wrap #contents{
+    margin:10px 20px 10px 20px;
+    background-color: rgb(215, 215, 215);
+    padding:10px 20px 10px 20px;
+}
+
+#wrap #footer{
+    margin-top: 10px;
+}
+
+/* header */
+#header>h1{
+    float:left;
+    margin:10px 0px 10px 20px;
+}
+
+#header ul{
+    float:right;
+}
+
+#header ul>li{
+    padding:20px 20px 0px 0px;
+    float:left;
+}
+
+/* navigation */
+#nav{
+    margin:0px 20px 0px 20px;
+    padding-left: 20px;
+}
+
+#nav>ul>li{
+    float:left;
+    padding:10px;
+    text-align:center;
+}
+
+/* aside */
+#wrap #contents #aside{
+    float:left;
+    width:160px;
+    padding:10px;
+}
+
+#contents #aside h3{
+    background-color: black;
+    padding:10px;
+    color:white;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#contents #aside ul>li{
+    background-color: white;
+    padding:10px;
+    margin-top: 10px;
+    border: 1px solid darkgray;
+}
+
+/* main */
+#wrap #contents #main{
+    float:left;
+    width:740px;
+}
+
+#wrap #contents2 #aside h2 {
+    background-color: #dddddd;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 15px 20px 15px;
+}
+
+#wrap #contents2 #aside ul>li {
+    font-size: 15px;
+    border: 1px solid #a6a6a6;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 0px 0px 0px;
+}
+
+/* 가로2단배치 > main */
+#wrap #contents2 #main #main-header {
+    margin-top: 20px;
+    border-bottom: 1px solid #a6a6a6;
+}
+
+#wrap #contents #main #main-header h3{
+    float:left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#main #main-header ul{
+    float:right;
+    margin-right:10px;
+}
+#main #main-header ul>li{
+    float:left;
+}
+
+#wrap #contents #main #main-header ul>li:after{
+    content:">";
+}
+#wrap #contents #main #main-header ul>li.none:after{
+    content:"";
+}
+
+#wrap #contents #main .main-table{
+    border:1px solid black;
+    /* border-bottom: 1px solid #000000; */
+}
+
+#wrap #contents #main #number{
+    float:left;
+}
+
+#wrap #contents #main #number ul>li{
+    float:left;
+    padding-left: 40px;
+    text-align: center;
+}

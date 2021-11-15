@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pizza</title>
+        <meta charset="UTF-8">
+        <style>
+ 
+            .memo>li{
+                list-style-type: none;
+                float:left;
+            }
+            .memo>li:after{
+                content:">";
+                padding:0px 5px 0px 5px;
+
+            }
+
+            
+           .memo>li.last:after{
+                content:""
+            }
+        </style>
+    </head>  
+
+    <body>
+        <ol class="memo">
+            <li>menu (1)</li>
+            <li>menu (2)</li>
+            <li>menu (3)</li>
+            <li>menu (4)</li>
+            <li>menu (5)</li>
+            <li class="last">menu (6)</li>
+
+        </ol>
+    
+    </body>
+
+</html>
+
+
+<!--table은 표를 위한...상단 메뉴바에 쓸 일은 없음-->
